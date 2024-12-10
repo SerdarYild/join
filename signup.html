@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myJoin</title>
+    <link rel="shortcut icon" href="./assets/icons/logo-blue-small.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/navBarHeader.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/signup.css">
+
+    <script src="./js/remoteStorage.js"></script>
+    <script src="./js/signup.js"></script>
+    <script src="./script.js"></script>
+
+</head>
+
+<body onload="">
+
+    <div class="index-body">
+        <div id="header-login" class="header-signup">
+            <img id="logo_login" class="logo-signup" src="./assets/icons/logo-blue-small.svg" alt="Join Logo">
+        </div>
+
+        <div id="login_body" class="signup-body">
+
+            <div class="signup-form-box signup-form-pad-wd">
+                <form id="signup-form" onsubmit="return false;" novalidate>
+                    <div class="form-header-signup">
+                        <div class="back-to-login">
+                            <a class="back-to-login-link" href="./index.html">
+                                <img class="back-to-login-img"
+                                    src="./assets/icons/arrow-left-line.svg" alt="Back to Login">
+                            </a>
+                        </div>
+                        <div class="headline">
+                            <h1 class="signup-title">Sign up</h1>
+                            <div class="underline-blue"></div>
+                        </div>
+                    </div>
+
+                    <div id="signup-popup-message" class="popup-message"></div>
+
+                    <div class="input-line">
+                        <input class="input input-login-text mrg-top-32 mrg-top-signup-mobile" type="name" id="signup-name" placeholder="Name">
+                        <div id="error-signup-name" class="errorMassage"></div>
+                        <input class="input input-login-email mrg-top-12" type="email" id="signup-email" placeholder="Email" autocomplete="email">
+                        <div id="error-signup-email" class="errorMassage"></div>
+                        <input class="input input-login-password mrg-top-12" type="password" id="signup-password"
+                            placeholder="Password" autocomplete="new-password">
+                        <div id="error-signup-password" class="errorMassage"></div>
+                        <input class="input input-login-password mrg-top-12" type="password" id="signup-confirm"
+                            placeholder="Confirm Password" autocomplete="new-password">
+                        <div id="error-signup-confirm" class="errorMassage"></div>
+                        <div id="show-hidden-password-signup" class="show-hidden-password-signup">
+                            <div  onmousedown="togglePasswordVisibilitySignup('signup')" style="width: 100%; height: 50%;"></div>
+                            <div  onmousedown="togglePasswordVisibilitySignup('confirm')" style="width: 100%; height: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="check-box-line">
+                        <input type="checkbox" name="privacy" id="policy-checkbox">
+                        <label for="privacy">I accept the <a onclick="window.open('./privacyPolicyNoLogin.html')" class="info-link-static" id="confirm_privacy_link">Privacy
+                                Policy</a></label>
+                    </div>
+                    <div id="error-signup-policy" class="errorMassage"></div>
+                    <div class="signup-button-mobile">
+                        <input type="submit" class="button-blue mrg-top-12" id="signup-button" value="Sign up" disabled/>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-login">
+                <a class="info-link" onclick="window.open('./privacyPolicyNoLogin.html')" class="a-link">Privacy Policy</a>
+                <a class="info-link" onclick="window.open('./legalNoticeNoLogin.html')" class="a-link">Legal notice</a>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

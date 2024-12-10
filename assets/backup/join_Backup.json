@@ -1,0 +1,396 @@
+{
+  "contacts": {
+    "-OBKydSIljAGwoLdBPg4": {
+      "color": "rgb(255,87,51)",
+      "email": "alice@example.com",
+      "id": "-OBKydSIljAGwoLdBPg4",
+      "initials": "AS",
+      "name": "Alice Smith",
+      "phone": "01234567890"
+    },
+    "-OBKydV1q5EY7dmznyny": {
+      "color": "rgb(161,51,255)",
+      "email": "eve@example.com",
+      "initials": "EJ",
+      "name": "Eve Jones",
+      "phone": "05678901234"
+    },
+    "-OBKydVeQIY387wxIScG": {
+      "color": "rgb(51,255,161)",
+      "email": "frank@example.com",
+      "initials": "FG",
+      "name": "Frank Garcia",
+      "phone": "06789012345"
+    },
+    "-OBKydWGzacsIBTiLwGi": {
+      "color": "rgb(255,87,51)",
+      "email": "grace@example.com",
+      "initials": "GM",
+      "name": "Grace Miller",
+      "phone": "07890123456"
+    },
+    "-OBKydWuthLaG6HgwcWI": {
+      "color": "rgb(51,255,87)",
+      "email": "heidi@example.com",
+      "initials": "HD",
+      "name": "Heidi Davis",
+      "phone": "018901234567"
+    },
+    "-OBKydY3hHLl_IpUhQES": {
+      "color": "rgb(255,51,161)",
+      "email": "judy@example.com",
+      "initials": "JH",
+      "name": "Judy Hernandez",
+      "phone": "0123456789"
+    },
+    "-ODH_VL3tnLhcYGZ-4Eo": {
+      "color": "rgb(219, 167, 162)",
+      "email": "jobarn@gmail.com",
+      "initials": "JB",
+      "name": "John Barnes",
+      "phone": "02345600022"
+    },
+    "-ODLXpJLhMa1eBvMJcTn": {
+      "color": "rgb(227, 186, 166)",
+      "email": "irush@uk@mail.uk",
+      "initials": "IR",
+      "name": "Ian Rush",
+      "phone": "05432190000"
+    },
+    "-ODLz6uBLGTw9YnKYvyC": {
+      "color": "rgb(147, 145, 128)",
+      "email": "ekos@freenet@mail.de",
+      "initials": "EK",
+      "name": "Emil Konstandin",
+      "phone": "067890000999"
+    },
+    "-ODMy0bAOHRBxv8ZlKlH": {
+      "color": "rgb(213, 226, 194)",
+      "email": "graemes@example.com",
+      "initials": "GS",
+      "name": "Graeme Souness",
+      "phone": "0987654321100"
+    },
+    "-ODQPVavuR81Qfcgxvrh": {
+      "color": "rgb(172, 248, 230)",
+      "email": "test@mail.de",
+      "initials": "NH",
+      "name": "Niko Helwig",
+      "phone": ""
+    },
+    "-ODRubZlP5KZj1eH6yHY": {
+      "color": "rgb(189, 201, 189)",
+      "email": "seyil1978@gmail.com",
+      "id": "-ODRubZlP5KZj1eH6yHY",
+      "initials": "SY",
+      "name": "Serdar Yild",
+      "phone": ""
+    },
+    "-ODS4v2kwnEn80W8D0gx": {
+      "color": "rgb(177, 174, 251)",
+      "email": "nickt@freenet.com",
+      "id": "-ODS4v2kwnEn80W8D0gx",
+      "initials": "NT",
+      "name": "Nick Tann",
+      "phone": "098651234500"
+    },
+    "-ODS8ina4Rv3uJ3cWhOO": {
+      "color": "rgb(184, 234, 208)",
+      "email": "test@hase.de",
+      "initials": "MH",
+      "name": "Meik Helwig",
+      "phone": "1616416"
+    },
+    "-ODSAHViwuQ3x4R0svhr": {
+      "color": "rgb(170, 151, 180)",
+      "email": "barryven@mail.com",
+      "id": "-ODSAHViwuQ3x4R0svhr",
+      "initials": "BV",
+      "name": "Barry Ven",
+      "phone": "098771231111"
+    },
+    "-ODVDCYrCR_RiVmECHRs": {
+      "color": "rgb(211, 230, 243)",
+      "email": "regina.gaigl@beispiel.de",
+      "initials": "RG",
+      "name": "Regina Gaigl",
+      "phone": ""
+    },
+    "-ODXhS83uh39Trd35K1i": {
+      "color": "rgb(218, 250, 182)",
+      "email": "lilly@fee.de",
+      "initials": "LF",
+      "name": "lilly feetest",
+      "phone": "123123"
+    },
+    "-ODacA3XP1E4JMXA1vyW": {
+      "color": "rgb(139, 212, 159)",
+      "email": "foo@bar.com",
+      "initials": "M",
+      "name": "mobile",
+      "phone": "+1282343235"
+    },
+    "-ODbs9UOGhiYjNfvpwWM": {
+      "color": "rgb(201, 142, 194)",
+      "email": "test@mail.de",
+      "initials": "TT",
+      "name": "test te",
+      "phone": "+495555"
+    },
+    "-ODbsRjF1eROaG24W-yM": {
+      "color": "rgb(238, 147, 131)",
+      "email": "fes@saf.de",
+      "initials": "ES",
+      "name": "efsef sefe",
+      "phone": "+4888"
+    },
+    "-ODeoFdXh8HlsnUltZls": {
+      "color": "rgb(230, 170, 230)",
+      "email": "lilly@fee.de",
+      "initials": "T",
+      "name": "test",
+      "phone": "123wer"
+    },
+    "undefined": {
+      "color": "rgb(189, 201, 189)",
+      "email": "seyil1978@gmail.com",
+      "initials": "SY",
+      "name": "Serdar Yild",
+      "phone": "12345"
+    }
+  },
+  "tasks": {
+    "-OBKyb62evxgVNUBVNhM": {
+      "assignedTo": [
+        "-OBKydSIljAGwoLdBPg4",
+        "-OBKydUP-fuPvw9qGQjx",
+        "-OBKydV1q5EY7dmznyny",
+        "-OBKydVeQIY387wxIScG",
+        "-OBKydWuthLaG6HgwcWI",
+        "-ODLXpJLhMa1eBvMJcTn",
+        "-ODLz6uBLGTw9YnKYvyC",
+        "-ODMy0bAOHRBxv8ZlKlH",
+        "-ODQPVavuR81Qfcgxvrh",
+        "-ODS4v2kwnEn80W8D0gx",
+        "-ODS8ina4Rv3uJ3cWhOO",
+        "-ODSAHViwuQ3x4R0svhr",
+        "-ODVDCYrCR_RiVmECHRs"
+      ],
+      "category": "user-story",
+      "description": "Create a login page with email and password fields, and implement authentication.",
+      "dueDate": "2023-11-01",
+      "id": "-OBKyb62evxgVNUBVNhM",
+      "prio": "low",
+      "status": "await-feedback",
+      "subtasks": [
+        {
+          "done": true,
+          "subtitle": "Design login page UI"
+        },
+        {
+          "done": true,
+          "subtitle": "Set up authentication backend"
+        }
+      ],
+      "title": "Implement login functionality"
+    },
+    "-OBKyb6uMqpMt7Ff4n0v": {
+      "assignedTo": [
+        "-OBKydUP-fuPvw9qGQjx",
+        "-OBKydV1q5EY7dmznyny",
+        "-OBKydVeQIY387wxIScG",
+        "-OBKydWuthLaG6HgwcWI",
+        "-OBKydY3hHLl_IpUhQES"
+      ],
+      "category": "technical-task",
+      "description": "Configure continuous integration and continuous deployment pipeline for the project",
+      "dueDate": "2023-11-05",
+      "id": "-OBKyb6uMqpMt7Ff4n0v",
+      "prio": "urgent",
+      "status": "await-feedback",
+      "subtasks": false,
+      "title": "Set up CI/CD pipeline"
+    },
+    "-OBKyb7hLZ4k7HrQMWCY": {
+      "assignedTo": [
+        "-OBKydWGzacsIBTiLwGi",
+        "-OBKydUP-fuPvw9qGQjx",
+        "-OBKydTh_o-DY_fi58cw"
+      ],
+      "category": "user-story",
+      "description": "Develop a user profile page where users can update their information.",
+      "dueDate": "2023-11-10",
+      "id": "-OBKyb7hLZ4k7HrQMWCY",
+      "prio": "low",
+      "status": "done",
+      "subtasks": [
+        {
+          "done": true,
+          "subtitle": "Design profile page UI"
+        },
+        {
+          "done": true,
+          "subtitle": "Implement profile update functionality"
+        }
+      ],
+      "title": "Create user profile page"
+    },
+    "-OBKyb8H4GmWVFx91jYh": {
+      "assignedTo": [
+        "-OBKydUP-fuPvw9qGQjx",
+        "-OBKydTh_o-DY_fi58cw",
+        "-OBKydVeQIY387wxIScG"
+      ],
+      "category": "technical-task",
+      "description": "Improve the performance of database queries by adding indexes and optimizing SQL.",
+      "dueDate": "2023-11-15",
+      "id": "-OBKyb8H4GmWVFx91jYh",
+      "prio": "medium",
+      "status": "to-do",
+      "subtasks": [
+        {
+          "done": true,
+          "subtitle": "Identify slow queries"
+        },
+        {
+          "done": false,
+          "subtitle": "Add necessary indexes"
+        },
+        {
+          "done": false,
+          "subtitle": "Optimize SQL queries"
+        },
+        {
+          "done": false,
+          "subtitle": "Test performance improvements"
+        },
+        {
+          "done": false,
+          "subtitle": "Deploy changes to production"
+        }
+      ],
+      "title": "Optimize database queries"
+    },
+    "-OBKyb8zOm5DqruG4x70": {
+      "assignedTo": [
+        "-OBKydT47iOhqim7ZFXO"
+      ],
+      "category": "user-story",
+      "description": "Allow users to reset their passwords via email.",
+      "dueDate": "2023-11-20",
+      "id": "-OBKyb8zOm5DqruG4x70",
+      "prio": "urgent",
+      "status": "to-do",
+      "subtasks": [
+        {
+          "done": false,
+          "subtitle": "Create password reset UI"
+        },
+        {
+          "done": false,
+          "subtitle": "Implement email sending functionality"
+        }
+      ],
+      "title": "Develop password reset feature"
+    },
+    "-OD6ksl43PntowOnlBS8": {
+      "assignedTo": [
+        "-OD1MKxdrzftSl46LTQy",
+        "-OD2edkbvXp8JzxL4ktf"
+      ],
+      "category": "technical-task",
+      "description": "check if user is also on contatcs list",
+      "dueDate": "2024-12-06",
+      "id": "-OD6ksl43PntowOnlBS8",
+      "prio": "medium",
+      "status": "in-progress",
+      "subtasks": [
+        {
+          "done": false,
+          "subtitle": "check contact details"
+        }
+      ],
+      "title": "Test User Signup"
+    },
+    "-ODR1etkPH8K0V1ueLU8": {
+      "assignedTo": [
+        "-OBKydT47iOhqim7ZFXO",
+        "-OBKydUP-fuPvw9qGQjx"
+      ],
+      "category": "technical-task",
+      "description": "Contacts finishing",
+      "dueDate": "2024-12-09",
+      "id": "-ODR1etkPH8K0V1ueLU8",
+      "prio": "urgent",
+      "status": "done",
+      "subtasks": [
+        {
+          "done": false,
+          "subtitle": "Dialog add"
+        }
+      ],
+      "title": "Contacts"
+    },
+    "-ODfDZOvL24U9HYQP88w": {
+      "assignedTo": [
+        "-OBKydSIljAGwoLdBPg4",
+        "-OBKydV1q5EY7dmznyny",
+        "-OBKydVeQIY387wxIScG",
+        "-OBKydWGzacsIBTiLwGi",
+        "-OBKydWuthLaG6HgwcWI",
+        "-OBKydY3hHLl_IpUhQES",
+        "-ODH_VL3tnLhcYGZ-4Eo",
+        "-ODLXpJLhMa1eBvMJcTn",
+        "-ODLz6uBLGTw9YnKYvyC",
+        "-ODMy0bAOHRBxv8ZlKlH",
+        "-ODQPVavuR81Qfcgxvrh",
+        "-ODRubZlP5KZj1eH6yHY",
+        "-ODS4v2kwnEn80W8D0gx",
+        "-ODS8ina4Rv3uJ3cWhOO",
+        "-ODSAHViwuQ3x4R0svhr",
+        "-ODacA3XP1E4JMXA1vyW",
+        "-ODbs9UOGhiYjNfvpwWM",
+        "-ODbsRjF1eROaG24W-yM",
+        "-ODeoFdXh8HlsnUltZls",
+        "undefined"
+      ],
+      "category": "user-story",
+      "description": "123",
+      "dueDate": "2024-12-20",
+      "prio": "low",
+      "status": "to-do",
+      "subtasks": false,
+      "title": "123"
+    }
+  },
+  "users": {
+    "-OBKyohyZkeQ1Nok1X9I": {
+      "color": "rgb(168,191,244)",
+      "email": "guest@guest.example",
+      "initials": "G",
+      "password": "guest123#",
+      "user": "guest"
+    },
+    "-ODQPVaDgJ98dNpsmMGj": {
+      "color": "rgb(172, 248, 230)",
+      "email": "test@mail.de",
+      "initials": "NH",
+      "password": "Test1234",
+      "user": "Niko Helwig"
+    },
+    "-ODRubYV5EkwcsNCpmDz": {
+      "color": "rgb(189, 201, 189)",
+      "email": "seyil1978@gmail.com",
+      "initials": "SY",
+      "password": "Join.122024",
+      "user": "Serdar Yil"
+    },
+    "-ODVDCSW1farNlvOI8sc": {
+      "color": "rgb(211, 230, 243)",
+      "email": "regina.gaigl@beispiel.de",
+      "initials": "RG",
+      "password": "Hierundda123#",
+      "user": "Regina Gaigl"
+    }
+  }
+}

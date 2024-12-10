@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myJoin</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/logo-blue-small.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/navBarHeader.css" />
+    <link rel="stylesheet" href="./styles/contacts.css" />
+    <link rel="stylesheet" href="./styles/contactDialog.css" />
+
+    <script src="./js/remoteStorage.js"></script>
+    <script src="./js/localStorage.js"></script>
+    <script src="./templates/header.template.js"></script>
+    <script src="./templates/navBar.template.js"></script>
+    <script src="./js/navBarHeader.js"></script>
+    <script src="./js/summaryUser.js"></script>
+    <script src="./js/contacts.js"></script>
+    <script src="./templates/generateContacts.template.js"></script>
+    <script src="./templates/contactsDialog.template.js"></script>
+    <script src="./script.js"></script>
+  </head>
+
+  <body onload="init(4); renderContactList()">
+    <div class="application-main">
+      <div id="navbar-container" class="navbar-container"></div>
+
+      <div class="application-main-content">
+        <header id="header-container" class="header"></header>
+        <div id="signup-popup-message" class="popup-message"></div>
+        <div class="contacts-container d-flex">
+          <!-- Left container: contact-list -->
+          <div id="contactListContainer" class="contact-list-container">
+            <div class="add-contact-button-container">
+              <button
+                id="addContact"
+                type="button"
+                onclick="openDialog('newContact')"
+                class="button-blue add-new-contact-btn"
+              >
+                Add new Contact
+                <img
+                  id="addPerson"
+                  src="./assets/icons/person-add.svg"
+                  class="icon"
+                />
+              </button>
+            </div>
+            <div
+              class="menü-button-mobile hover"
+              onclick="openDialog('newContact')"
+            >
+              <img
+                id="addPerson"
+                src="./assets/icons/person-add.svg"
+                class="icon"
+              />
+            </div>
+            <div id="contactList" class="contact-list"></div>
+          </div>
+          <!-- Right container: Contact details -->
+          <div id="contactDetailsContainer" class="contact-details-container">
+            <div class="contact-title">
+              <div class="title-menue">
+                <h1>Contacts</h1>
+                <div class="back-btn" onclick="toggleResponsiveView('list')">
+                  <img
+                    src="./assets/icons/arrow-left-line.svg"
+                    alt="Back Arrow"
+                  />
+                </div>
+              </div>
+              <div class="contact-vertical-line"></div>
+              <p class="contact-text">Better with a team</p>
+              <div class="contact-vertical-line-mobile"></div>
+            </div>
+            <!-- contact details are displayed here -->
+            <div
+              id="current-contact"
+              class="current-contact slide-in-right"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="navbar-container-mobile" class="navbar-container-mobile"></div>
+
+    <dialog id="contactDialog"></dialog>
+  </body>
+</html>

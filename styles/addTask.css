@@ -1,0 +1,361 @@
+.application-main {
+  overflow: hidden;
+}
+
+.application-content {
+  max-width: var(--app-max-width);
+  margin-left: 64px;
+  margin-right: 64px;
+  margin-top: 60px;
+  height: calc(100% - 200px);
+}
+
+.addTask-Content {
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 550px;
+}
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.separator {
+  height: 400px;
+  border: 1px solid #d1d1d1;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.listSubtasks {
+  min-height: 10px;
+  max-height: 120px;
+  overflow: auto;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.radio-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-container label {
+  display: inline-flex;
+  width: 120px;
+  height: 50px;
+  align-items: center;
+  padding: 6px 12px;
+  border: 2px solid var(--light-grey);
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.radio-urgent input[type="radio"]:checked + label {
+  border-color: #ff3d00;
+  background-color: #ff3d00;
+  color: white;
+  background-image: url(../assets/icons/urgent-priority-small-white.svg);
+  background-repeat: no-repeat;
+}
+
+.radio-medium input[type="radio"]:checked + label {
+  border-color: #ffa800;
+  background-color: #ffa800;
+  color: white;
+  background-image: url(../assets/icons/medium-priority-small-white.svg);
+  background-repeat: no-repeat;
+}
+
+.radio-low input[type="radio"]:checked + label {
+  border-color: #7ae229;
+  background-color: #7ae229;
+  color: white;
+  background-image: url(../assets/icons/low-priority-small-white.svg);
+  background-repeat: no-repeat;
+}
+
+.radio-urgent label {
+  background: url(../assets/icons/urgent-priority-small-color.svg) no-repeat;
+  background-position: 90%;
+  background-color: white;
+}
+
+.radio-medium label {
+  background: url(../assets/icons/medium-priority-small-color.svg) no-repeat;
+  background-position: 90%;
+  background-color: white;
+}
+
+.radio-low label {
+  background: url(../assets/icons/low-priority-small-color.svg) no-repeat;
+  background-position: 90%;
+  background-color: white;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.button-white:hover img {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(98%) saturate(891%)
+    hue-rotate(165deg) brightness(95%) contrast(86%);
+}
+
+.assinged-users {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.assign-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+select:focus {
+  background-image: url(../assets/icons/select-arrow-up.svg);
+}
+
+.input-group {
+  border: 1px solid var(--light-grey);
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 12px 21px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group:has(.input-subtasks:focus) {
+  border: 1px solid var(--light-blue);
+}
+
+.input-subtasks {
+  border: unset;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  flex: 1;
+  width: 100%;
+}
+
+.input-subtasks:focus-visible {
+  outline: none;
+}
+
+.subtaskBtn {
+  display: none;
+}
+
+.subtaskSep {
+  border: 1px solid #2a3647;
+  margin-left: 4px;
+  margin-right: 6px;
+}
+
+.subtaskCheckBtn {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.subtaskClearBtn {
+  cursor: pointer;
+}
+
+.subtaskBtnActive {
+  display: flex;
+}
+
+.subtask-list-item {
+  padding: 4px 24px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtask-list-img {
+  display: none;
+  height: 16px;
+  cursor: pointer;
+}
+.subtask-list-item:hover .subtask-list-img {
+  display: block;
+}
+
+.subtask-list-item:hover {
+  background-color: var(--light-grey);
+  border-radius: 8px;
+}
+
+.subtask-list-item::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.input-subtask-list-item {
+  border: none;
+  background-color: transparent;
+  width: 95%;
+}
+
+@media (max-width: 1120px) {
+  .application-content {
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 90%;
+  }
+
+  .form-footer {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 990px) {
+  .application-content {
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 80%;
+  }
+  .form {
+    flex-direction: column;
+    overflow: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .separator {
+    display: none;
+  }
+  .radio-btns {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .assinged-users {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 860px) {
+  .application-content {
+    height: 70%;
+  }
+
+  .form {
+    height: 100%;
+  }
+
+  .button-white,
+  .button-blue {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .application-content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .input-subtask-list-item {
+    width: 90%;
+  }
+}
+@media (max-width: 560px) {
+  .form-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .application-content {
+    margin-top: 40px;
+    height: 75%;
+  }
+
+  .button-white,
+  .button-blue {
+    padding: 12px 16px;
+  }
+}
+@media (max-width: 390px) {
+  .application-content {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .assinged-users {
+    gap: 4px;
+  }
+
+  .button-white,
+  .button-blue {
+    padding: 12px 12px;
+    font-size: 16px;
+  }
+
+  .dropdown-click {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}

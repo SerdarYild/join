@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myJoin</title>
+    <link rel="shortcut icon" href="./assets/icons/logo-blue-small.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/navBarHeader.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/loginAnimation.css">
+
+
+    <script src="./js/remoteStorage.js"></script>
+    <script src="./js/localStorage.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./script.js"></script>
+
+</head>
+
+<body id="body" onload="initLogin()">
+
+    <div class="index-body">
+
+        <!-- Overlay with logo and animation -->
+        <div id="index-overlay" class="index-overlay index-overlay-mobile">
+        </div>
+        <div id="logo-overlay" class="logo-overlay logo-overlay-mobile">
+            <div class="logo-overlay-img"></div>
+        </div>
+        
+
+        <div id="header-login" class="header-login">
+            <img id="logo-login" class="logo-login" src="./assets/icons/logo-blue-small.svg" alt="Join Logo">
+            <div class="signup-line">
+                Not a Join user?
+                <button class="button-blue" onclick="window.open('./signup.html', '_self')"
+                    class="signup-button-blue">Sign
+                    up</button>
+            </div>
+        </div>
+
+        <div id="login-body" class="login-body">
+
+            <div id="login-form-box" class="login-form-box login-form-pad-wd">
+                <form id="login-form" onsubmit="return false;" novalidate>
+                    <div class="headline">
+                        <h1>Log in</h1>
+                        <div class="underline-blue"></div>
+                    </div>
+
+                    <div class="input-line mrg-top-32">
+                        <input id="login-email" class="input input-login-email" type="email" placeholder="Email"
+                            autocomplete="username">
+                        <div id="error-login-email" class="errorMassage"></div>
+                        <input id="login-password" class="input input-login-password mrg-top-12" type="password"
+                            placeholder="Password" autocomplete="current-password">
+                        <div id="error-login-password" class="errorMassage"></div>
+                        <div id="show-hidden-password" class="show-hidden-password"
+                            onmousedown="togglePasswordVisibility()"></div>
+                    </div>
+
+                    <div class="checkbox-line">
+                        <input type="checkbox" id="login-checkbox" name="rememberme">
+                        <label for="rememberme">Remember me</label>
+                    </div>
+                    <div class="button-line mrg-top-32">
+                        <button id="login-button" class="button-blue" onclick="login()" disabled>Log in</button>
+                        <button class="button-white" onclick="guestLogin()">Guest Log in</button>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-line-mobile">
+                Not a Join user?
+                <button class="button-blue" onclick="window.open('./signup.html', '_self')"
+                    class="signup-button-blue">Sign
+                    up</button>
+            </div>
+            <div class="footer-login">
+                <a class="info-link" onclick="window.open('./privacyPolicyNoLogin.html')" class="a-link">Privacy
+                    Policy</a>
+                <a class="info-link" onclick="window.open('./legalNoticeNoLogin.html')" class="a-link">Legal notice</a>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

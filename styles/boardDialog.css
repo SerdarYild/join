@@ -1,0 +1,414 @@
+#boardDialog {
+  width: 525px;
+  height: 90%;
+  border-radius: 30px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 4px 0px #00000029;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+#addTaskDialog {
+  border-radius: 30px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 4px 0px #00000029;
+  padding: 40px 20px;
+  overflow: hidden;
+  height: 90%;
+}
+
+#addTaskDialog:focus-visible,
+#boardDialog:focus-visible {
+  outline: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.dialog-scroll {
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.dialog-task-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 24px;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+}
+
+.dialog-header-addTask {
+  display: flex;
+  justify-content: space-between;
+}
+
+.closeX {
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.closeX:hover {
+  filter: var(--filter-blue);
+}
+
+.closeX > img {
+  height: 13px;
+}
+
+.headline {
+  color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headline > p {
+  display: inline;
+  margin: 0;
+}
+
+.dialog-assigned {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dialog-subtask {
+  margin-top: 6px;
+  margin-left: 6px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 4px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.dialog-subtask img {
+  cursor: pointer;
+}
+
+.dialog-subtask:hover {
+  background-color: var(--light-grey);
+}
+
+.dialog-menue {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dialog-menue-points {
+  display: flex;
+  height: 24px;
+  gap: 8px;
+}
+
+.dialog-menue-point {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dialog-menue-point:hover {
+  filter: var(--filter-blue);
+}
+
+.dialog-menue-point img {
+  height: 90%;
+  margin-right: 8px;
+}
+
+.dialog-menue-poinsts-seperator {
+  height: 100%;
+
+  border: 1px solid #d1d1d1;
+}
+
+dialog[open] {
+  animation: show 250ms ease normal;
+}
+
+@keyframes show {
+  from {
+    transform: translateX(600%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+dialog.hide {
+  animation: hide 250ms ease normal;
+}
+
+@keyframes hide {
+  to {
+    transform: translateX(600%);
+  }
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.formBoard {
+  align-items: flex-start;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.radio-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-container label {
+  margin-top: 16px;
+  display: inline-flex;
+  width: 120px;
+  height: 50px;
+  align-items: center;
+  padding: 6px 12px;
+  border: 2px solid var(--light-grey);
+  border-radius: 12px;
+  background-color: white;
+  font-size: 16px;
+  /* color: #333; */
+  cursor: pointer;
+  /* transition: all 0.3s ease; */
+}
+
+.radio-urgent input[type="radio"]:checked + label {
+  border-color: #ff3d00;
+  background-color: #ff3d00;
+  color: white;
+  background-image: url(../assets/icons/urgent-priority-small-white.svg);
+  background-repeat: no-repeat;
+}
+
+.radio-medium input[type="radio"]:checked + label {
+  border-color: #ffa800;
+  background-color: #ffa800;
+  color: white;
+  background-image: url(../assets/icons/medium-priority-small-white.svg);
+  background-repeat: no-repeat;
+}
+
+.radio-low input[type="radio"]:checked + label {
+  border-color: #7ae229;
+  background-color: #7ae229;
+  color: white;
+  background-image: url(../assets/icons/low-priority-small-white.svg);
+  background-repeat: no-repeat;
+}
+
+.radio-urgent label {
+  background: url(../assets/icons/urgent-priority-small-color.svg) no-repeat;
+  background-position: 90%;
+}
+
+.radio-medium label {
+  background: url(../assets/icons/medium-priority-small-color.svg) no-repeat;
+  background-position: 90%;
+}
+
+.radio-low label {
+  background: url(../assets/icons/low-priority-small-color.svg) no-repeat;
+  background-position: 90%;
+}
+
+.lable {
+  margin-bottom: 4px;
+}
+
+.assinged-users {
+  display: flex;
+  margin-top: 8px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.form-submit-btn {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog-scroll-edit {
+  max-height: calc(100vh - 230px);
+}
+
+.button-check {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.input-group {
+  border: 1px solid var(--light-grey);
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 12px 21px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group:has(.input-subtasks:focus) {
+  border: 1px solid var(--light-blue);
+}
+
+.input-subtasks {
+  border: unset;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  flex: 1;
+  width: 100%;
+}
+
+.input-subtasks:focus-visible {
+  outline: none;
+}
+
+.subtaskBtn {
+  display: none;
+}
+
+.subtaskSep {
+  border: 1px solid #2a3647;
+  margin-left: 4px;
+  margin-right: 6px;
+}
+
+.subtaskCheckBtn {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.subtaskClearBtn {
+  cursor: pointer;
+}
+
+.subtaskBtnActive {
+  display: flex;
+}
+
+.listSubtasks {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.subtask-list-item {
+  padding: 4px 24px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtask-list-img {
+  display: none;
+  height: 16px;
+  cursor: pointer;
+}
+.subtask-list-item:hover .subtask-list-img {
+  display: block;
+}
+
+.subtask-list-item:hover {
+  background-color: var(--light-grey);
+  border-radius: 8px;
+}
+
+.subtask-list-item::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .input {
+    padding: 12px 12px;
+  }
+
+  #boardDialog,
+  .input,
+  .lable,
+  .lableRequiert,
+  .form-submit-btn div,
+  ::placeholder {
+    font-size: 16px;
+  }
+
+  .dropdown-list input[type="checkbox"] + label {
+    padding-left: 4px;
+  }
+
+  .subtask-list-img {
+    display: block;
+  }
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .radio-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .radio-container label {
+    width: 200px;
+  }
+}
